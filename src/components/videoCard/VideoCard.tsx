@@ -79,7 +79,7 @@ const VideoCards: React.FC = () => {
 
   return (
     <DndProvider backend={HTML5Backend}>
-      <div className="flex flex-col gap-2 border border-gray-500 bg-black px-4 py-3 h-[80vh] overflow-y-scroll rounded-xl w-1/4">
+      <div className="flex flex-col gap-2 border border-gray-500 bg-black px-4 py-3 h-[80vh] overflow-y-scroll rounded-xl w-full">
         <p className="text-white text-center text-3xl">
           {searchValue === "" ? "Video Lists" : "Searched Data"}
         </p>

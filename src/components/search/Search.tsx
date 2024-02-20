@@ -16,7 +16,7 @@ const Search = () => {
 
   return (
     <>
-      <div className="w-1/3 rounded-3xl bg-black py-[2px] px-6 flex gap-2 items-center justify-between h-12 ">
+      <div className="w-1/3 rounded-3xl bg-black py-[2px] px-6 flex gap-2 items-center justify-between h-12 max-sm:w-4/5 ">
         <input
           type="text"
           placeholder="search"

@@ -13,8 +13,8 @@ const MoviePage = () => {
         <div className="flex item-center justify-center mt-6">
           <Search />
         </div>
-        <div className="flex gap-8 px-40 py-10">
-          <div className="h-[80vh] flex flex-col gap-4">
+        <div className="grid gridTemplate gap-8 px-40 py-10 max-2xl:px-24 max-xl:flex-col max-xl:flex max-xl:gap-24 max-lg:h-[60vh] max-sm:h-[40vh] max-sm:px-8 max-sm:gap-12">
+          <div className="h-[80vh] flex flex-col gap-4 ">
             <div>
               <VideoPlayer
                 src={selectedVideo?.videoLink}
@@ -38,7 +38,10 @@ const MoviePage = () => {
             </div>
           </div>
 
-          <VideoCards />
+          <div className="">
+            {" "}
+            <VideoCards />
+          </div>
         </div>
       </div>
     </>

@@ -1,23 +1,22 @@
 import React, { useEffect, useState } from "react";
-import "./App.css";
 import MoviePage from "./pages/MoviePage";
 import { movieList } from "../src/constants/index";
 import { VideoItem } from "./constants/types";
+import "./App.css";
 
-// Create a context
 export const MyContext = React.createContext(
   {} as {
     selectedVideo: VideoItem | null;
     setSelectedVideo: React.Dispatch<React.SetStateAction<VideoItem | null>>;
     data: VideoItem[];
-    searchValue: string; // Corrected to string
-    setSearchValue: React.Dispatch<React.SetStateAction<string>>; // Include setSearchValue
+    searchValue: string;
+    setSearchValue: React.Dispatch<React.SetStateAction<string>>;
   }
 );
 
 const App = () => {
   const [data, setData] = useState<any>(movieList);
-  const [searchValue, setSearchValue] = useState<any>("");
+  const [searchValue, setSearchValue] = useState<string>("");
   const firstMovie = data[0];
 
   const [selectedVideo, setSelectedVideo] = useState<VideoItem | null>(
