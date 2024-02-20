@@ -1,4 +1,4 @@
-import { useState, useRef, useContext } from "react";
+import { useState, useContext } from "react";
 import { MyContext } from "../../App";
 
 const Search = () => {

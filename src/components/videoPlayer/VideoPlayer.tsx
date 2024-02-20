@@ -5,6 +5,7 @@ const VideoPlayer = ({ src, width, height, auto, controls }: any) => {
   const [isPlaying, setIsPlaying] = useState<boolean>(false);
 
   const togglePlay = () => {
+    console.log(isPlaying);
     const videoElement = videoRef.current;
     if (videoElement) {
       if (videoElement.paused) {

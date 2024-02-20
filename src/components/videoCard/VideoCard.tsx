@@ -37,7 +37,7 @@ const VideoCards: React.FC = () => {
 
     const [, drop] = useDrop({
       accept: "VIDEO",
-      hover: (item: DragItem, monitor) => {
+      hover: (item: DragItem) => {
         if (!drag) {
           return;
         }
