@@ -39,7 +39,6 @@ const MoviePage = () => {
           </div>
 
           <div className="">
-            {" "}
             <VideoCards />
           </div>
         </div>

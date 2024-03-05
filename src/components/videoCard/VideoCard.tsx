@@ -47,7 +47,6 @@ const VideoCards: React.FC = () => {
         if (dragIndex === hoverIndex) {
           return;
         }
-
         moveVideo(dragIndex, hoverIndex);
         item.index = hoverIndex;
       },
